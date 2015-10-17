@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/etc/netctl/interfaces'
+let g:netrw_dirhist_2='/home/lkx810/.zsh_history'
+let g:netrw_dirhist_3='/home/lkx810/.zsh_history/boot'
+let g:netrw_dirhist_4='/home/lkx810/.zsh_history/home/lkx810'
+let g:netrw_dirhist_5='/home/lkx810/.gnome'
+let g:netrw_dirhist_6='/home/lkx810/.config/gnome-session'
+let g:netrw_dirhist_7='/etc/gdm/PostLogin'
+let g:netrw_dirhist_8='/etc/gdm'

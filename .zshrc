@@ -27,9 +27,9 @@ esac
 #编辑器
 export EDITOR=vim
 #输入法
-export XMODIFIERS="@im=ibus"
-export QT_MODULE=ibus
-export GTK_MODULE=ibus
+export XMODIFIERS="@im=fcitx"
+export QT_MODULE=fcitx
+export GTK_MODULE=fcitx
 #关于历史纪录的配置 {{{
 #历史纪录条目数量
 export HISTSIZE=10000
@@ -235,10 +235,15 @@ alias ll='ls -al'
 alias grep='grep --color=auto'
 alias la='ls -a'
 alias pacman='sudo pacman --color=auto'
-alias p='sudo pacman-color'
+alias install='sudo pacman -S'
 alias y='yaourt'
 alias h='htop'
- 
+alias -g .status='systemctl status'
+alias -g .g='|grep'
+alias -g .restart='systemctl restart'
+alias dhcpcd='sudo dhcpcd'
+alias l='ls -al'
+
 #[Esc][h] man 当前命令时，显示简短说明
 alias run-help >&/dev/null && unalias run-help
 autoload run-help
@@ -333,4 +338,6 @@ check-cmd-self-insert() { zle .self-insert && recolor-cmd }
  zle -N self-insert check-cmd-self-insert
  zle -N backward-delete-char check-cmd-backward-delete-char
 
+
 export TERM='xterm-256color'
+screenfetch | grep -v '!'
